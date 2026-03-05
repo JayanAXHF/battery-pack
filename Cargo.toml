@@ -1,20 +1,19 @@
 [workspace]
 members = [
-	# --- main facade
-    "src/battery-pack",
+    "battery-pack",
 	# --- helper crates
-    "src/battery-pack/bphelper-build",
-    "src/battery-pack/bphelper-cli",
-    "src/battery-pack/bphelper-manifest",
+    "bphelper-build",
+    "bphelper-cli",
+    "bphelper-manifest",
 	# --- battery packs
-    "battery-packs/cli-battery-pack",
-    "battery-packs/error-battery-pack",
-    "battery-packs/logging-battery-pack",
+    "packs/cli-battery-pack",
+    "packs/error-battery-pack",
+    "packs/logging-battery-pack",
 ]
 resolver = "2"
 
 [workspace.dependencies]
-battery-pack = { path = "src/battery-pack", version = "0.4" }
+battery-pack = { path = "./battery-pack/", version = "0.4" }
 anyhow = "1"
 minijinja = { version = "2", features = ["loader"] }
 cargo_metadata = "0.23"
