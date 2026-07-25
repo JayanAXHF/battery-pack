@@ -67,6 +67,17 @@ This reads your `Cargo.toml`, `README.md`, and `docs.handlebars.md`, then render
 ```handlebars
 \{{readme}}
 
+# Renamed dep: the version is resolved by the real crate name (`tokio`): tokio_rt = { package = "tokio", bp-managed = true }
+```
+
+Two keys conflict with `bp-managed`, since each already provides the
+version: `version` and `workspace`. The marker's value must be `true` — `bp-managed = false` (or any non-`true` value) is an error, so drop the key to opt out. Managed deps are also resolved under platform-gated `[target.<cfg>.*]` tables.
+
+### Validating templates
+
+`cargo bp validate` automatically generates each template, runs
+`cargo check` and `cargo test` on the result, and reports failures.
+This catches broken templates before they reach users.
 \{{crate-table}}
 ```
 

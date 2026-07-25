@@ -118,8 +118,6 @@ clap = { bp-managed = true, features = ["derive", "env"] }
 serde = { bp-managed = true, optional = true }
 ```
 
-The only key that conflicts with `bp-managed` is `version`.
-
 ## Merge-friendly templates
 
 Templates applied to existing projects with `cargo bp add <pack> -t <name>` handle file conflicts by type:
