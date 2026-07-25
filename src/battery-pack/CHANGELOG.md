@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1](https://github.com/battery-pack-rs/battery-pack/compare/battery-pack-v0.6.0...battery-pack-v0.6.1) - 2026-07-25
+
+### Other
+
+- Merge pull request #160 from gme-muriuki/bp-managed-target-cfg
+- Merge branch 'main' into bp-managed-target-cfg
+
 ## [0.6.0](https://github.com/battery-pack-rs/battery-pack/compare/battery-pack-v0.5.5...battery-pack-v0.6.0) - 2026-07-16
 
 ### Added
