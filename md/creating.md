@@ -67,18 +67,11 @@ This reads your `Cargo.toml`, `README.md`, and `docs.handlebars.md`, then render
 ```handlebars
 \{{readme}}
 
-# Managed version with optional:
-serde = { bp-managed = true, optional = true }
-
-# Renamed dep: the version is resolved by the real crate name (`tokio`):
-tokio_rt = { package = "tokio", bp-managed = true }
+# Renamed dep: the version is resolved by the real crate name (`tokio`): tokio_rt = { package = "tokio", bp-managed = true }
 ```
 
 Two keys conflict with `bp-managed`, since each already provides the
-version: `version` and `workspace`. The marker's value must be `true` —
-`bp-managed = false` (or any non-`true` value) is an error, so drop the
-key to opt out. Managed deps are also resolved under platform-gated
-`[target.<cfg>.*]` tables.
+version: `version` and `workspace`. The marker's value must be `true` — `bp-managed = false` (or any non-`true` value) is an error, so drop the key to opt out. Managed deps are also resolved under platform-gated `[target.<cfg>.*]` tables.
 
 ### Validating templates
 
