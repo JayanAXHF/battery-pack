@@ -6,23 +6,25 @@ members = [
     "src/cargo-bp",
 	# --- scripting commons + JSON schema
     "src/cargo-bp-script",
+	# --- mdbook preprocessor
+    "src/mdbook-battery-pack",
 	# --- helper crates
     "src/battery-pack/bphelper-build",
     "src/battery-pack/bphelper-cli",
     "src/battery-pack/bphelper-manifest",
     "src/sectioned-picker",
 	# --- battery packs
+    "battery-packs/backend-service-battery-pack",
     "battery-packs/cli-battery-pack",
     "battery-packs/ci-battery-pack",
+    "battery-packs/embedded-battery-pack",
     "battery-packs/error-battery-pack",
     "battery-packs/logging-battery-pack",
-	# --- opinionated battery packs
-    "opinionated-battery-packs/backend-service-battery-pack",
 ]
 resolver = "2"
 
 [workspace.dependencies]
-battery-pack = { path = "src/battery-pack", version = "0.5" }
+battery-pack = { path = "src/battery-pack", version = "0.6" }
 cargo-bp-script = { path = "src/cargo-bp-script", version = "0.2" }
 anyhow = "1"
 minijinja = { version = "2", features = ["loader"] }

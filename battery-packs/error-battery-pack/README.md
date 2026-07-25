@@ -2,13 +2,6 @@
 
 Error handling done well. A [battery pack](https://crates.io/crates/battery-pack) that curates the essential error handling crates for Rust.
 
-## What's Included
-
-| Crate | What it does |
-|-------|-------------|
-| [anyhow](https://crates.io/crates/anyhow) | Ergonomic error handling for applications — `Result<T>`, `.context()`, error chaining |
-| [thiserror](https://crates.io/crates/thiserror) | Derive macros for defining custom error types in libraries |
-
 ## Quick Start
 
 ```sh
@@ -47,7 +40,7 @@ The skill files in `skills/` are adapted from an error handling guide originally
 
 Licensed under either of:
 
-- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
-- MIT license ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
+- [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- [MIT license](https://opensource.org/license/mit)
 
 at your option.
