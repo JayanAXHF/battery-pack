@@ -9,10 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.1](https://github.com/battery-pack-rs/battery-pack/compare/cargo-bp-v0.6.0...cargo-bp-v0.6.1) - 2026-07-25
 
+### Added
+
+- *(bp-managed)* resolve managed deps in target-gated tables ([#160](https://github.com/battery-pack-rs/battery-pack/pull/160) by @gme-muriuki)
+
 ### Other
 
-- Merge pull request #160 from gme-muriuki/bp-managed-target-cfg
-- Merge branch 'main' into bp-managed-target-cfg
+- *(tui)* modularize tui.rs into components and utils ([#181](https://github.com/battery-pack-rs/battery-pack/pull/181) by @shamnad-sherief)
 
 ## [0.6.0](https://github.com/battery-pack-rs/battery-pack/compare/cargo-bp-v0.5.6...cargo-bp-v0.6.0) - 2026-07-16
 
