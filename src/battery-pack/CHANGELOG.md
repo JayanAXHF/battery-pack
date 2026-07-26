@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1](https://github.com/battery-pack-rs/battery-pack/compare/battery-pack-v0.6.0...battery-pack-v0.6.1) - 2026-07-25
+
+### Added
+
+- *(bp-managed)* resolve managed deps in target-gated tables ([#160](https://github.com/battery-pack-rs/battery-pack/pull/160) by @gme-muriuki)
+
+### Other
+
+- *(tui)* modularize tui.rs into components and utils ([#181](https://github.com/battery-pack-rs/battery-pack/pull/181) by @shamnad-sherief)
+
 ## [0.6.0](https://github.com/battery-pack-rs/battery-pack/compare/battery-pack-v0.5.5...battery-pack-v0.6.0) - 2026-07-16
 
 ### Added
